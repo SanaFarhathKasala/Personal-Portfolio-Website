@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style2.css" />
+
+  <!-- Load EmailJS once -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <!-- Initialize EmailJS properly after it's loaded -->
+  <script>
+    window.addEventListener("load", function () {
+      emailjs.init("1IR0KOW4Yj8o9l00t");
+    });
+  </script>
+  <!-- Load your script after EmailJS is ready -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Sidebar Menu -->
+  <nav class="sidebar">
+    <button class="menu-toggle">☰ Menu</button>
+    <ul class="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+  <!-- Hero Section -->
+  <section id="about" class="section hero">
+    <h2>My Portfolio</h2>
+    <img src="profile.jpg" alt="My Photo" class="profile-pic">
+    <h3>Hello! I'm</h3>
+    <h1>Sana Farhath Kasala</h1>
+    <h4 class="gradient-text">💻 Building beautiful & functional web experiences</h4>
+    <p class="intro-text">Highly motivated and detail-oriented Computer Science undergraduate...</p>
+  </section>
+  <!-- Resume Button -->
+  <div class="resume-button">
+    <a href="sana resumee.pdf" target="_blank">Resume</a>
+  </div>
+
+  <!-- Education -->
+  <section id="education" class="section card-section">
+    <h2>Education</h2>
+    <h3>Undergraduation</h3>
+    <div class="card">
+      <p>2023 - 2027</p>
+      <h4>Bachelor Degree in Computer Science</h4>
+      <p>MITS, Madanapalle</p>
+      <p>CGPA - 8.9 | Percentage - 89%</p>
+    </div>
+     <h3>Intermediate</h3>
+    <div class="card">
+    <p>2021-2023</p>
+    <p>Mangal Vidyalayam</p>
+    <p>Percentage - 85%</p>
+    </div>
+    <h3>SSC</h3>
+    <div class="card">
+    <p>2020-2021</p>
+    <p>Vijaya English Medium High School</p>
+    <p>Percentage - 98%</p>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="section card-grid">
+    <h2>My Certifications</h2>
+    <div class="grid">
+      <!-- Repeat for each certificate -->
+      <div class="card">
+        <img src="python cert.jpg" alt="Certification">
+        <p>Python 101 for Data Science
+            A course on cognitiveclass,ai Powered by IBM Developer skills Network.
+        </p>
+        </div>
+        <div class="card">
+        <img src="german.png" alt="Certification">
+        <p>Elite Certification for successfully completing 12 weeks course</p>
+        </div>
+        <div class="card">
+        <img src="ISTE.png" alt="Certification">
+        <p>Active participation Hands on workshop on Full-Stack-Development</p>
+      </div>
+      <div class="card">
+        <img src="Ip.png" alt="Certification">
+        <p>Certification for successfully completing Intellectual property course</p>
+      </div>
+      <!-- Add more -->
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="tech-icons">
+      <div>
+        <h4>Programming Languages</h4>
+        <img src="c.png"><img src="java.png"><img src="py.png">
+      </div>
+      <div>
+        <h4>Frontend Technologies</h4>
+        <img src="frontend.png">
+      </div>
+      <div>
+        <h4>Development Tools</h4>
+        <img src="github.png"><img src="vs.png">
+      </div>
+    </div>
+    <div class="bar-skills">
+  <div class="bar"><span>C</span><div class="fill c"></div></div>
+  <div class="bar"><span>Python</span><div class="fill python"></div></div>
+  <div class="bar"><span>Java</span><div class="fill java"></div></div>
+  <div class="bar"><span>HTML</span><div class="fill html"></div></div>
+  <div class="bar"><span>CSS</span><div class="fill css"></div></div>
+</div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section card-section">
+    <h2>My Projects</h2>
+    <div class="card project-card">
+      <div class="text">
+        <h3>Farmer Buddy App</h3>
+        <p>Developed as part of Smart India Hackathon (SIH), this app enables direct interaction between farmers and consumers by eliminating intermediaries. Built using **Flutter** for a cross-platform mobile experience and **Firebase** for real-time database and authentication, the app allows farmers to list produce and connect with buyers instantly. Created in collaboration with a team, it aims to ensure fair pricing, reduce middlemen, and strengthen the agricultural supply chain.
+</p>
+      </div>
+      <img src="farmer.png" alt="">
+    </div>
+    <div class="card project-card">
+      <div class="text">
+    <h3>E-commerce website</h3>
+    <p>I have developed responsive e-commerce website developed using HTML,CSS, and Javascript. It features cart functionality,user authentication.
+      A basic backend is connected using the firebase
+    </p>
+    </div>
+    <img src="ecommerce.png" alt="">
+    </div>
+    <div class="card project-card">
+      <div class="text">
+        <h3>To do list app</h3>
+        <p> A simple responsive activity list web application built using HTML,CSS,and JavaScript,with 
+          basic backend functionality for login and signup. Users can create their own task list by adding
+        activities,and remove them when completed .It's a lightweight productivity tool aimed at helping users
+        manage the daily tasks effectively.
+         </p>
+      </div>
+      <img src="listapp.png">
+    </div>
+  </section>
+
+
+  <!-- Contact Form -->
+ <section id="contact" class="section contact-form">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="title" placeholder="Subject" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="msgSent" style="display:none; color: green; margin-top: 10px;">
+    ✅ Message sent successfully!
+  </p>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 <strong>Sana Farhath Kasala</strong>. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
